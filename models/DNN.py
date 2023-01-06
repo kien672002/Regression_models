@@ -11,9 +11,9 @@ import pickle as pkl
 def create_model():
     model = Sequential()
 
-    model.add(Dense(units=256, kernel_initializer="normal", activation="relu"))
-    model.add(Dense(units=256, kernel_initializer="normal", activation="relu"))
-    model.add(Dense(units=256, kernel_initializer="normal", activation="relu"))
+    model.add(Dense(units=256, kernel_initializer="he_normal", activation="relu"))
+    model.add(Dense(units=256, kernel_initializer="he_normal", activation="relu"))
+    model.add(Dense(units=256, kernel_initializer="he_normal", activation="relu"))
 
     model.add(Dense(units=1, kernel_initializer="normal", activation="linear"))
 
